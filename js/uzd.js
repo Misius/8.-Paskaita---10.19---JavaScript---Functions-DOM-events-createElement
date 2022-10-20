@@ -89,3 +89,67 @@ makeDark.addEventListener('click', toggleBodyDark);
 // 10.3 padaryti kad kiekvienas elementas turetu fono spalva tokia kokia yra irasyta tarp li tagu.
 
 
+// 11. <button>change h1 color to blue</button> paspaudus daro tai kas parasyta
+
+
+
+// 12. gauti ir iskonsolinti kiek elementu yra ol saraso elemente. 
+
+
+
+// 13. su js padidinti visu ol li elementu teksto raides i upperCase
+
+const listas = document.querySelectorAll('.listas > li')
+
+for ( let liEl of listas ) {
+    console.log(liEl.textContent);
+    liEl.textContent = liEl.textContent.toUpperCase();
+}
+
+// 14. prie esamos  <h3 class="blog__title">Hello people</h3> prideti teksta '--Naujiena--'
+
+
+
+// 15. prie esamos  <p class="blog__text">Sveiki cia James.</p> prideti "as esu is Londono"
+
+
+
+// 16.  <button>light</button> padaro <article class="blog"> fona juoda o teksta balta
+
+
+
+// 17.  <button>dark</button> padaro <article class="blog"> texta juoda o fona balta
+
+
+
+// 18 <button>destroy</button> istrina <article class="blog">
+
+
+
+// 19. <div class="box-container"></div> i vidu ikelti paragrafa su tekstu "i am dynamic" (innerHTML)
+
+const boxContainerEl = document.querySelector('#box-container');
+console.log('boxContainerEl ===', boxContainerEl);
+const pElHtml = '<p> Iam dynamic, yeeeee!!!!</p>';
+// <elementas i kuri dedam>.innerHTML = <HTML stringas>
+boxContainerEl.innerHTML = pElHtml;
+creatAndAddP()
+// 20.  <button>add paragraph</button> paspaudus ivyksta 19ta uzduotis
+
+// nusitaikyti ii mygtuka
+// uzdeti pspaudimo pasiklausyma
+// paspaudus norim prideti nauja p elementa i html
+
+const addBtnEl = document.getElementById('add')
+
+addBtnEl.addEventListener('click', creatAndAddP);
+
+function creatAndAddP() {
+    boxContainerEl.innerHTML += pElHtml;
+}
+
+// 21. <button>Turn <span>dark</span> mode on</button> paspaudus pakeiciam teksta dark i light
+
+
+
+// 22. <button>Turn <span>dark</span> mode on</button> kiekviena karta paspaudus keiciam teksta dark i light ir atvirksciai
